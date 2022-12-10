@@ -1,0 +1,210 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+  <body>
+    <div class="slider-container">
+      <div class="slider-item fade">
+        <img src="https://drive.google.com/uc?export=view&id=1DJQ54RsPjeAYz0SH5h7YklETY-fRdt-c" />
+      </div>
+
+      <div class="slider-item fade">
+        <img src="https://drive.google.com/uc?export=view&id=1-rn5c79dEXj85x1IOAHCQJrdt7iopLWw" />
+      </div>
+
+      <div class="slider-item fade">
+        <img src="https://drive.google.com/uc?export=view&id=1xOvspJi7z0pjgdPV-wXUrkVYA9jeEMSX" />
+      </div>
+
+      <div class="slider-item fade">
+        <img src="https://drive.google.com/uc?export=view&id=1CdGdXThJFhE4rz_v95mk9lkOcfGBsVkq" />
+      </div>
+
+      <a class="prev" onclick="updateSlide(-1)">&#10094;</a>
+      <a class="next" onclick="updateSlide(1)">&#10095;</a>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja Ken</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-left">
+          <h1 class="logo">NINJA KEN</h1>
+        </div>
+        <!-- Tambahkan ikon menu di sini -->
+        <span class="fa fa-bars menu-icon"></span>
+        <div class="header-right">
+          <a href="#">Tentang Saya</a>
+          <a href="#">Proyek Contoh</a>
+          <a href="#" class="login">Hubungi Saya</a>
+        </div>
+      </div>
+    </header>
+     <div class="top-wrapper">
+      <div class="container">
+        <h1 class = "container-intro">NINJA KEN<span>.</span></h1>
+        <p class = "porto-intro">MY PORTOFOLIO</p>
+        <img class = "ken-logo" src = "https://drive.google.com/uc?export=view&id=1gqgaJtOpw5K0oV4tMiYU2tsMGJYpRTZZ">
+      </div>
+    </div>
+    <div class = "about-me-wrapper">
+      <div class = "container">
+          <div class = "heading">
+              <h2>Tentang Saya</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+      </div>
+    </div>
+    <div class="lesson-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h2>Proyek Contoh</h2>
+        </div>
+      </div>
+    </div>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 4</div>
+        <img class="myImages" id="myImg" src="https://drive.google.com/uc?export=view&id=1BuMqw8fs0QI6w40Ql5Twia0UFN2w9URS" alt="Image 1" style="width:100%">
+        <div class="text">Image 1</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 4</div>
+        <img class="myImages" id="myImg" src="https://drive.google.com/uc?export=view&id=1eqJQ2AxCOVFvPV7mpaxlXfwQReD1Rv0Y" alt="Image 2" style="width:100%">
+        <div class="text">Image 2</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 4</div>
+        <img class="myImages" id="myImg" src="https://drive.google.com/uc?export=view&id=19_wCjJkiv_xBrpJzuPWGWMNMy32L_om6" alt="Image 3" style="width:100%">
+        <div class="text">Image 3</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img class="myImages" id="myImg" src="https://drive.google.com/uc?export=view&id=1CdGdXThJFhE4rz_v95mk9lkOcfGBsVkq" alt="Image 4" style="width:100%">
+        <div class="text">Ninjago</div>
+      </div>
+    
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <div class="dot-div" style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+    <script src="script.js"></script>
+    <div class="message-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h2>Hubungi Saya</h2>
+          <div class="contact-form">
+            <form onsubmit="return false">
+              E-mail (Diperlukan) <br><input type="text" id="email" size="20" name="mail"><br><br>
+              Message (Diperlukan) <br><input type="text" id="msg" size="200" name="msg"><br>
+            </form>
+            <button class ="contact-submit" onclick="myFunction()">Submit</button>
+            <p id="error"></p>
+            <script>
+              function myFunction() {
+                var at = document.getElementById("email").value.indexOf("@");
+                var msg = document.getElementById("msg").value;
+                var error = document.getElementById("error")
+                // var errorMsg = document.createElement('p');
+                var txt = "";
+                
+                if(msg.length === 0 && at == -1){
+                  txt = "Message not filled & not a valid email" + "<br>";
+                  error.style.color = "red";
+                }else if(msg.length === 0){
+                  txt = "Message not filled" + "<br>";
+                  error.style.color = "red"; 
+                } else if (at == -1) {
+                  txt = "Not a valid email" + "<br>";
+                  error.style.color = "red";
+                }else {
+                  txt = "Sucessfully sent" + "<br>";
+                  error.style.color = "green";
+                }
+                error.innerHTML = txt
+                // error.append(errorMsg);
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="faq-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h2>FAQ</h2>
+          <button class="accordion">What is your name?</button>
+          <div class="panel">
+            <p>Classified</p>
+          </div>
+
+          <button class="accordion">Hubla?</button>
+          <div class="panel">
+            <p>Yes</p>
+          </div>
+
+          <button class="accordion">Wubla</button>
+          <div class="panel">
+            <p>No</p>
+          </div>
+          <script>
+            const accordion = document.getElementsByClassName("accordion");
+          
+            for (let i = 0; i < accordion.length; i++) {
+              accordion[i].addEventListener("click", function () {
+                const panel = this.nextElementSibling;
+          
+                if (panel.style.display === "block") {
+                  panel.style.display = "none";
+                } else {
+                  panel.style.display = "block";
+                }
+              });
+            }
+          </script>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="header-left">
+          <h1 class="logo">NINJA KEN</h1>
+        </div>
+        <div class="header-foot">
+          <a href="#">Tentang Saya</a>
+          <a href="#">Proyek Contoh</a>
+          <a href="#" class="login">Hubungi Saya</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
